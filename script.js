@@ -75,3 +75,39 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'all 0.8s ease-out';
     observer.observe(section);
 });
+
+// Lógica para Generar PDF
+document.getElementById('download-pdf').addEventListener('click', function() {
+    // Escondemos temporalmente elementos que no queremos en el PDF (navbar, botones)
+    const navbar = document.querySelector('.navbar');
+    const heroActions = document.querySelector('.hero-actions');
+    const socialLinks = document.querySelectorAll('.social-links');
+    
+    // Guardamos los estilos originales
+    const navDisplay = navbar.style.display;
+    const actionsDisplay = heroActions.style.display;
+    
+    navbar.style.display = 'none';
+    heroActions.style.display = 'none';
+    socialLinks.forEach(link => link.style.display = 'none');
+
+    // Cambiamos un poco el body para que quepa bien en el PDF (opcional)
+    const element = document.body;
+    
+    // Opciones para el PDF
+    const opt = {
+      margin:       0,
+      filename:     'CV_Gerardo_Wateyma.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#0B0C10', windowWidth: 1200 },
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    // Generar el PDF
+    html2pdf().set(opt).from(element).save().then(() => {
+        // Restaurar elementos escondidos
+        navbar.style.display = navDisplay;
+        heroActions.style.display = actionsDisplay;
+        socialLinks.forEach(link => link.style.display = 'flex');
+    });
+});
