@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerardo Wateyma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Particles/Glow -->
+    <div class="bg-glow"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-brand">GW.</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Sección Inicio (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Hola, soy</h2>
+            <h1 class="name">Gerardo <span class="neon-text">Wateyma</span></h1>
+            <h3 class="typed-text-container">
+                <span id="typed-text"></span><span class="cursor">&nbsp;</span>
+            </h3>
+            <p class="hero-desc">Ingeniero de Sistemas en formación y apasionado por el desarrollo de software y
+                hardware. Combino la programación con la mecatrónica para crear soluciones innovadoras.</p>
+
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                <a href="#" class="btn btn-outline">Descargar CV</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/Ganp-YW" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:gerardowateyma@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="img-container glass-panel">
+                <img src="./assets/perfil.jpeg" alt="Gerardo Wateyma">
+                <div class="floating-badge badge-1"><i class="fa-solid fa-microchip"></i></div>
+                <div class="floating-badge badge-2"><i class="fa-solid fa-code"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <h2 class="section-title">Sobre <span class="neon-text">Mí</span></h2>
+        <div class="about-container glass-panel">
+            <div class="about-text">
+                <p>Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la Universidad Bicentenaria de Aragua,
+                    con un enfoque particular en la integración de software y hardware. Desde mis inicios académicos he
+                    buscado liderar proyectos tecnológicos.</p>
+                <p>Con 4 años de experiencia docente, he desarrollado sólidas habilidades en la resolución de problemas
+                    complejos, liderazgo de equipos y comunicación efectiva, lo que me permite abordar desafíos de
+                    ingeniería desde múltiples perspectivas.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt neon-icon"></i> Maracay, Estado Aragua, Venezuela</p>
+                    <p><i class="fas fa-envelope neon-icon"></i> gerardowateyma@gmail.com</p>
+                    <p><i class="fas fa-phone neon-icon"></i> +58 424-3225660</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills">
+        <h2 class="section-title">Habilidades <span class="neon-text">Técnicas</span></h2>
+
+        <div class="skills-grid">
+            <!-- Software -->
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-laptop-code neon-icon"></i> Software & Web</h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span>C / C++</span><span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Python</span><span>80%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Java</span><span>Aprendiendo</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware -->
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-microchip neon-icon"></i> Hardware & Mecatrónica</h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Arduino</span><span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>ESP32</span><span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Raspberry Pi</span><span>Aprendiendo</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inteligencia Artificial -->
+            <div class="skill-category glass-panel">
+                <h3><i class="fas fa-robot neon-icon"></i> Inteligencia Artificial</h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Prompt Engineering</span><span>Avanzado</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Gemini / Claude / ChatGPT</span><span>Experto</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Antigravity (Agentes AI)</span><span>Avanzado</span></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category glass-panel soft-skills">
+                <h3><i class="fas fa-brain neon-icon"></i> Habilidades Blandas</h3>
+                <div class="tags">
+                    <span class="tag">Resolución de Problemas</span>
+                    <span class="tag">Liderazgo de Proyectos</span>
+                    <span class="tag">Docencia / Mentoring</span>
+                    <span class="tag">Trabajo en Equipo</span>
+                    <span class="tag">Capacidad de Análisis</span>
+                    <span class="tag">Aprendizaje Rápido</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="experience">
+        <h2 class="section-title">Experiencia <span class="neon-text">Laboral</span></h2>
+
+        <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <span class="date">Actualidad (1 año)</span>
+                    <h3>Encargado del Laboratorio de Mecatrónica</h3>
+                    <h4>Universidad Bicentenaria de Aragua (UBA)</h4>
+                    <p>Gestión, mantenimiento y desarrollo de pequeños proyectos dentro del laboratorio de mecatrónica
+                        de la universidad. Soporte técnico y acompañamiento a estudiantes.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <span class="date">4 años de experiencia</span>
+                    <h3>Profesor Particular</h3>
+                    <h4>Independiente</h4>
+                    <p>Asesorías y clases particulares en Matemática, Física e Ingeniería. Desarrollo de habilidades
+                        pedagógicas y comunicación asertiva para transmitir conocimientos complejos.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <span class="date">2024</span>
+                    <h3>Pasante de Seguridad Industrial y RRHH</h3>
+                    <h4>Barquillas Mundial</h4>
+                    <p>Funciones administrativas enfocadas en los recursos humanos y la seguridad industrial dentro del
+                        entorno de la empresa.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-panel">
+                    <span class="date">2023</span>
+                    <h3>Emprendimiento "Función Zeta"</h3>
+                    <h4>Independiente</h4>
+                    <p>Proyecto de asesorías y clases de matemática. Rol integral como docente, community manager y
+                        marketing digital para la cuenta de Instagram del proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación y Certificaciones -->
+    <section id="educacion" class="education">
+        <h2 class="section-title">Educación & <span class="neon-text">Certificaciones</span></h2>
+
+        <div class="edu-grid">
+            <div class="edu-card glass-panel">
+                <i class="fas fa-graduation-cap neon-icon fa-2x"></i>
+                <h3>Ingeniería de Sistemas</h3>
+                <h4>Universidad Bicentenaria de Aragua</h4>
+                <p class="edu-date">2024 - Presente (6to Trimestre)</p>
+            </div>
+
+            <div class="edu-card glass-panel">
+                <i class="fas fa-school neon-icon fa-2x"></i>
+                <h3>Bachiller en Ciencias</h3>
+                <h4>UEP Colegio Academos</h4>
+                <p class="edu-date">Graduado en 2024</p>
+            </div>
+
+            <div class="edu-card glass-panel cert-card">
+                <div class="cert-header">
+                    <i class="fas fa-certificate neon-icon fa-2x"></i>
+                    <span class="badge">Destacado</span>
+                </div>
+                <h3>Certificación de Investigación</h3>
+                <h4>UBA - XIV y X Jornada de Investigación Nacional</h4>
+                <p>Reconocimiento por la presentación del proyecto: <strong>"Interfaz de control y monitoreo para una
+                        bomba de fluidos"</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">GW.</h2>
+            <p>Construyendo el futuro entre líneas de código y circuitos.</p>
+            <div class="social-links footer-socials">
+                <a href="https://github.com/Ganp-YW" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:gerardowateyma@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gerardo Wateyma. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
